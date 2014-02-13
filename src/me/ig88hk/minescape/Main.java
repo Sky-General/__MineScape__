@@ -54,7 +54,7 @@ public class Main extends JavaPlugin implements Listener {
 		      	  }
 // Help Menu Above ^ --------------
 	      if (cmd.getName().equalsIgnoreCase("heal")) {
-	    	  player.setHealth(10);
+	    	  player.setHealth(9);
 	    	  player.setFoodLevel(10);
 	    	  player.setFireTicks(0);
 	    	  player.sendMessage(ChatColor.GREEN + "You have been healed");
