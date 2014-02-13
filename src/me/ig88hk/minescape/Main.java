@@ -57,7 +57,6 @@ public class Main extends JavaPlugin implements Listener {
 	    	  player.setHealth(10);
 	    	  player.setFoodLevel(10);
 	    	  player.setFireTicks(0);
-	    	  player.sendMessage(ChatColor.RED + "Shmeg");
 	    	 
 	      }
 		      	 
