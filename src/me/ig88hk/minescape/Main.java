@@ -1,6 +1,7 @@
 package me.ig88hk.minescape;
 
 import java.util.logging.Logger;
+
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -21,6 +22,7 @@ public class Main extends JavaPlugin implements Listener {
     	logger.info("[" + pdfFile.getName() + "] v" + pdfFile.getVersion() + " is now disabled!");
     	}
     
+	@SuppressWarnings("deprecation")
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
     	Player player = (Player) sender;
     	
@@ -51,6 +53,12 @@ public class Main extends JavaPlugin implements Listener {
 	    		   player.sendMessage(ChatColor.RED + "/mc kick" + ChatColor.YELLOW + ":" + ChatColor.YELLOW + " Kick players");
 		      	  }
 // Help Menu Above ^ --------------
+	      if (cmd.getName().equalsIgnoreCase("heal")) {
+	    	  player.setHealth(10);
+	    	  player.setFoodLevel(10);
+	    	  player.setFireTicks(0);
+	    	 
+	      }
 		      	 
 // Commands Above This Line ------------
 
