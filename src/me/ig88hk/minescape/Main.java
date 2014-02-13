@@ -30,11 +30,8 @@ public class Main extends JavaPlugin implements Listener {
   		    if(args.length == 0) {
   		      //send message;
 	    		   player.sendMessage(ChatColor.DARK_GRAY + "----------------------------------------------------");// 52 dashes
-<<<<<<< HEAD
 	      		   player.sendMessage(ChatColor.GRAY + "                 MineScape Version " + pdfFile.getVersion());
-=======
 	      		   player.sendMessage(ChatColor.GRAY + "                 MineScape Version 0.1 Alpha");
->>>>>>> f06c4ecb0c7b84c6c8318e0cfca8f94f2757aa17
 	      		   player.sendMessage(ChatColor.YELLOW + "               Type " + ChatColor.RED + "/ms help " + ChatColor.YELLOW + "for list of commands");
 	    		   player.sendMessage(ChatColor.DARK_GRAY + "----------------------------------------------------");
     		      return true;
@@ -58,16 +55,13 @@ public class Main extends JavaPlugin implements Listener {
 		      	  }
 // Help Menu Above ^ --------------
 	      if (cmd.getName().equalsIgnoreCase("heal")) {
-<<<<<<< HEAD
 	    	  player.setHealth(9);
 	    	  player.setFoodLevel(10);
 	    	  player.setFireTicks(0);
 	    	  player.sendMessage(ChatColor.GREEN + "You have been healed");
-=======
 	    	  player.setHealth(10);
 	    	  player.setFoodLevel(10);
 	    	  player.setFireTicks(0);
->>>>>>> f06c4ecb0c7b84c6c8318e0cfca8f94f2757aa17
 	    	 
 	      }
 		      	 
