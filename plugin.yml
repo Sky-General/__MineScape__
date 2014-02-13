@@ -1,0 +1,17 @@
+name: MineScape
+main: me.ig88hk.minescape.Main
+author: IG88HK
+startup: postworld
+version: ‘1.0’
+commands:
+  ms:
+    description: Version of plugin
+  ms help:
+    description: Show list of commands
+  ms admin:
+    description: Show list of Admin commands
+
+
+
+
+
