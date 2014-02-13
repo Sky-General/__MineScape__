@@ -33,8 +33,7 @@ public class Main extends JavaPlugin implements Listener {
 	      		   player.sendMessage(ChatColor.GRAY + "                 MineScape Version 0.1 Alpha");
 	      		   player.sendMessage(ChatColor.YELLOW + "               Type " + ChatColor.RED + "/ms help " + ChatColor.YELLOW + "for list of commands");
 	    		   player.sendMessage(ChatColor.DARK_GRAY + "----------------------------------------------------");
-    		      return true;
-  		    }
+    		     
 		      if(args[0].equals("help")) { //they typed "/ms help"
 		        //send message
 	    		   player.sendMessage(ChatColor.DARK_GRAY + "----------------------------------------------------"); // 52 dashes
@@ -43,7 +42,7 @@ public class Main extends JavaPlugin implements Listener {
 	    		   player.sendMessage(ChatColor.RED + "/mc cmds" + ChatColor.YELLOW + ":" + ChatColor.YELLOW + " Show all commands.");
 	    		   player.sendMessage(ChatColor.RED + "/ms admin" + ChatColor.YELLOW + ":" + ChatColor.YELLOW + " Shows all admin commands.");
 	    		   player.sendMessage(ChatColor.RED + "/ms" + ChatColor.YELLOW + ":" + ChatColor.YELLOW + " Shows current version your running");
-		      	  }return true;
+		      	  }
     	  }
 	      if(args[0].equals("admin")) { //they typed "/ms help"
 		        //send message
@@ -52,6 +51,7 @@ public class Main extends JavaPlugin implements Listener {
 	    		   player.sendMessage(ChatColor.DARK_GRAY + "----------------------------------------------------");
 	    		   player.sendMessage(ChatColor.RED + "/mc kick" + ChatColor.YELLOW + ":" + ChatColor.YELLOW + " Kick players");
 		      	  }
+    	  }
 // Help Menu Above ^ --------------
 	      if (cmd.getName().equalsIgnoreCase("heal")) {
 	    	  player.setHealth(10);
